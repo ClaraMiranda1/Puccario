@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenhos - Puccario</title>
+
+    <style>
+        body {
+            background-image: url('https://i.pinimg.com/736x/6d/e3/36/6de33627dd1aa90ce99ee0e6d9b0a936.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .grid {
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            border: solid 6px;
+            text-align: center;
+        }
+
+        .cardRosa, .cardPreto {
+            display: inline-block;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            margin: 10px;
+            border-radius: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(0, 0, 0);
+            font-size: 50px;
+            background-color: rgb(221, 0, 0);
+        }
+
+        img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        nav {
+            background-color: black;
+            padding-bottom: 40px;
+            padding-top: 8px;
+        }
+
+        li {
+            display: inline;
+        }
+
+        li, a {
+            color: aliceblue;
+        }
+
+        a {
+            float: right;
+            padding: 19px;
+            margin-top: -20px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        a:hover {
+            background-color: rgb(255, 0, 0);
+            color: black;
+        }
+
+        .footer {
+            background-color: rgb(219, 0, 0);
+            color: aliceblue;
+            text-align: center;
+            padding: 15px 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .navbar {
+            background-color: black;
+            color: white;
+            height: 50px;
+            width: 100%;
+        }
+
+        .nav-liks {
+            display: flex;
+            justify-content: end;
+            padding: 10px;
+            background-color: black;
+        }
+
+        .logo {
+            display: flex;
+            align-items: flex-start;
+            position: fixed;
+        }
+
+        .logo > img {
+            width: 80px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="download__2_-removebg-preview.png" alt="Ícone" style="width: 100px; height: 100px;">
+        </div>
+        <div class="nav-liks">
+            <a href="1305.html">Home</a> 
+            <a href="Draws.html">Draws</a>
+            <a href="puccastore.html">PuccaStore</a>
+        </div>
+    </nav>
+
+    <h1>Desenhos da Pucca</h1>
+
+    <div class="grid">
+        <!-- Cards com desenhos -->
+        <div class="cardRosa">
+            <img src="https://i.pinimg.com/564x/70/10/c0/7010c06bd3f93d2a07e3f4dfd92dbe0b.jpg" alt="Desenho 1">
+        </div>
+
+        <div class="cardPreto">
+            <img src="https://i.pinimg.com/564x/15/c9/02/15c90279f3d3a2704f528aa26925b2c0.jpg" alt="Desenho 2">
+        </div>
+
+        <div class="cardRosa">
+            <img src="https://i.pinimg.com/564x/36/f9/08/36f9081037f0010e961c67b71c1e65b5.jpg" alt="Desenho 3">
+        </div>
+
+        <div class="cardPreto">
+            <img src="https://i.pinimg.com/564x/1c/b9/f7/1cb9f76f792d2c82d5a1c0ad5a94c071.jpg" alt="Desenho 4">
+        </div>
+
+        <div class="cardRosa">
+            <img src="https://i.pinimg.com/564x/0e/e4/8e/0ee48e45a9b7e67938a3f82a60c34558.jpg" alt="Desenho 5">
+        </div>
+
+        <div class="cardPreto">
+            <img src="https://i.pinimg.com/564x/62/66/42/62664252aa9fd6be9086fc2512acdc96.jpg" alt="Desenho 6">
+        </div>
+    </div>
+
+    <div class="footer">
+        XOXO.2025
+    </div>
+
+</body>
+</html>
