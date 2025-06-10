@@ -1,0 +1,313 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PuccaStore</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-image: url('https://i.pinimg.com/736x/6d/e3/36/6de33627dd1aa90ce99ee0e6d9b0a936.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .navbar {
+      background-color: black;
+      color: white;
+      height: 60px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      position: fixed;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo img {
+      width: 80px;
+    }
+
+    .nav-liks {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-liks a {
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .nav-liks a:hover {
+      background-color: rgb(255, 0, 0);
+      color: black;
+    }
+
+    /* Menu sanduíche */
+    .menu-icon {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .menu-icon div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 4px;
+      transition: 0.3s;
+    }
+
+    @media (max-width: 768px) {
+      .nav-liks {
+        display: none;
+        flex-direction: column;
+        background-color: black;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 10px 0;
+        border-radius: 0 0 0 10px;
+      }
+
+      .nav-liks.active {
+        display: flex;
+      }
+
+      .menu-icon {
+        display: flex;
+      }
+    }
+
+    h1 {
+      text-align: center;
+      padding-top: 90px;
+      font-size: 40px;
+      color: white;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 30px;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #ff6a6a;
+      border-radius: 15px;
+      width: 200px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(255, 0, 0, 0.664);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .card h3 {
+      margin: 10px 0 5px 0;
+      font-size: 18px;
+    }
+
+    .card p {
+      margin: 5px 0 10px 0;
+      font-size: 16px;
+      color: #00ff0db7;
+    }
+
+    .card button {
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .card button:hover {
+      background-color: darkred;
+    }
+
+    .footer {
+      background-color: rgb(219, 0, 0);
+      color: aliceblue;
+      text-align: center;
+      padding: 15px 0;
+      bottom: 0;
+      width: 100%;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">
+      <img src="download__2_-removebg-preview.png" alt="Ícone">
+    </div>
+
+    <div class="nav-liks" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="pag2.html">PuccaStore</a>
+    </div>
+
+    <div class="menu-icon" id="menuIcon">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </nav>
+
+  <h1>PuccaStore</h1>
+
+  <div class="container">
+    <!-- Seus 15 cards -->
+    <div class="card">
+      <img src="pantufa1.jfif" alt="Produto 1">
+      <h3>Pantufa PuccayGaru</h3>
+      <p>R$ 39,90</p>
+      <button>Comprar</button>
+    </div>
+
+    <div class="card">
+      <img src="kit cama.jfif" alt="Produto 2">
+      <h3>Kit Cama Pucca</h3>
+      <p>R$ 89,90</p>
+      <button>Comprar</button>
+    </div>
+
+    <div class="card">
+      <img src="Add some color to your routine with this two-tone….jfif" alt="Produto 3">
+      <h3>Caneca Pucca</h3>
+      <p>R$ 34,90</p>
+      <button>Comprar</button>
+    </div>
+
+    <div class="card">
+      <img src="perfume1.jfif" alt="Produto 4">
+      <h3>Perfume Pucca</h3>
+      <p>R$ 75,90</p>
+      <button>Comprar</button>
+    </div>
+
+    <div class="card">
+      <img src="almofadas1.jfif" alt="Produto 5">
+      <h3>Almofada Pucca</h3>
+      <p>R$ 39,90</p>
+      <button>Comprar</button>
+    </div>
+
+    <div class="card">
+      <img src="ad367705-0b11-42a8-9b81-1f48489ad90f.jfif" alt="Produto 6">
+      <h3>Poster Pucca</h3>
+      <p>R$ 24,90</p>
+      <button>Comprar</button>
+    </div>
+
+    <div class="card">
+      <img src="pulseiras1.jfif" alt="Produto 7">
+      <h3>Kit Pucca</h3>
+      <p>R$ 9,99</p>
+      <button>Comprar</button>
+    </div>
+
+    <div class="card">
+      <img src="New With Tag_ Pucca Funny Love pencil case. Do Not…. Do Not…. Do Not…" alt="Produto 8">
+      <h3>Estojo Pucca</h3>
+      <p>R$ 29,90</p>
+      <button>Comprar</button>
+    </div>
+
+    <div class="card">
+      <img src="Pucca (1).jfif" alt="Produto 9">
+      <h3>Caderno Garu</h3>
+      <p>R$ 19,90</p>
+      <button>Comprar</button>
+    </div>
+
+    <div class="card">
+      <img src="stickers.jfif" alt="Produto 10">
+      <h3>Adesivos Pucca</h3>
+      <p>R$ 9,90</p>
+      <button>Comprar</button>
+    </div>
+
+    <div class="card">
+      <img src="ecobag.jfif" alt="Produto 11">
+      <h3>Ecobag Pucca</h3>
+      <p>R$ 49,90</p>
+      <button>Comprar</button>
+    </div>
+
+    <div class="card">
+      <img src="@domokase ig 💌🍓.jfif" alt="Produto 12">
+      <h3>Colar Pucca</h3>
+      <p>R$ 19,90</p>
+      <button>Comprar</button>
+    </div>
+
+    <div class="card">
+      <img src="@Drickxstudios.jfif" alt="Produto 13">
+      <h3>Camiseta Pucca</h3>
+      <p>R$ 59,90</p>
+      <button>Comprar</button>
+    </div>
+
+    <div class="card">
+      <img src="Unos llaveritos de Pucca y Garu ❤️ llevan un imán….jfif" alt="Produto 14">
+      <h3>Chaveiro Pucca</h3>
+      <p>R$ 14,90</p>
+      <button>Comprar</button>
+    </div>
+
+    <div class="card">
+      <img src="44d4d0dc-65bb-42e9-a606-0778f1d5bd01.jfif" alt="Produto 15">
+      <h3>Mochila Pucca</h3>
+      <p>R$ 99,90</p>
+      <button>Comprar</button>
+    </div>
+  </div>
+
+  <div class="footer">
+    XOXO.2025
+  </div>
+
+  <script>
+    const menuIcon = document.getElementById('menuIcon');
+    const navLinks = document.getElementById('navLinks');
+
+    menuIcon.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
